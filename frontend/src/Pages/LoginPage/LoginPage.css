@@ -1,0 +1,84 @@
+.login-container {
+    display: grid;
+    place-items: center;
+}
+
+.login-container-2 {
+    margin: 0;
+    padding: 0;
+    height: 55vh;
+    display: grid;
+    place-items: end center;
+}
+.login-container-3 {
+    display: grid;
+    place-items: start center;
+}
+
+.welcome-pic {
+    margin-bottom: 5%;
+}
+
+.login-opt {
+    display: grid;
+    place-items: start center;
+    margin-bottom: 1%;
+    width: 100vw;
+}
+
+.option-btn {
+    border: 7px solid black;
+  background-color: white;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 2em;
+  width: 10em;
+  color: black;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.login-btn {
+    border: 7px solid black;
+  background-color: #b0ad53;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 2em;
+  color: black;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.submit-btn {
+    border: 7px solid black;
+  background-color: #b0ad53;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.option-btn:hover {
+    background-color: #b0ad53;
+}
+
+.data-input {
+    width: 30vw;
+    margin: 0;
+    padding: 5%;
+    border: 7px solid black;
+    background-color: white;
+}
+
+.input-form {
+    display: grid;
+    columns: 1fr;
+    place-items: end start;
+    row-gap: 10px;
+}
+
+.close-btn-container {
+    display: grid;
+    place-items: start end;
+}

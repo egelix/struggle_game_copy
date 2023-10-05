@@ -1,0 +1,30 @@
+.home-page-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 5%;
+}
+
+.achievements {
+    width: 90%;
+    background-color: white;
+    border: 7px solid black;
+    box-shadow: 10px 10px black;
+    padding: 2%;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+        /*justify-content: space-between;*/
+}
+
+
+.achievement-element {
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.achievement-title {
+    font-size: x-small;
+}

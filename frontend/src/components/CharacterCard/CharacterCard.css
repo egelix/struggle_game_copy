@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    gap: 1em;
+}
+.wrapper img {
+    width: 100%;
+}
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+    }
+  }

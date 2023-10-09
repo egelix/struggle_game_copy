@@ -57,7 +57,7 @@ class CollisionHandler {
   
         if (
           this.platformCollision({
-            object1: this.player,
+            object1: this.player.hitBox,
             object2: platformCollisionBlock,
           })
         ) {
@@ -85,7 +85,7 @@ class CollisionHandler {
         const scoreBlock = this.game.scoreBlocks[i];
         if(
             this.collision({
-                object1: this.player,
+                object1: this.player.hitBox,
                 object2: scoreBlock,
             })
         ) {
@@ -100,7 +100,7 @@ class CollisionHandler {
     checkPowerUpCollision() {
       if(
         this.collision({
-          object1: this.player,
+          object1: this.player.hitBox,
           object2: this.game.powerUp,
         })
       )

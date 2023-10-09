@@ -44,19 +44,19 @@ const LEVELS = [
     coinPositions: [
             {
                 x: UNIT * 3,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 8),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
             },
             {
                 x: UNIT * 8,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 8),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
             },
             {
                 x: UNIT * 23,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 8),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
             },
             {
                 x: UNIT * 28,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 8),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
             },
             {
                 x: UNIT * 15.5,
@@ -68,7 +68,7 @@ const LEVELS = [
             },
             {
                 x: UNIT * 15.5,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 4),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 5),
             },
             {
                 x: UNIT * 21,
@@ -121,35 +121,35 @@ const LEVELS = [
     coinPositions: [
             {
                 x: UNIT * 9,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 11),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 12),
             },
             {
                 x: UNIT * 12,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 10),
             },
             {
                 x: UNIT * 22,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 11),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 12),
             },
             {
                 x: UNIT * 19,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 9),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 10),
             },
             {
                 x: UNIT * 6,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 4),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 5),
             },
             {
                 x: UNIT * 24,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 4),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 5),
             },
             {
                 x: UNIT * 28,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 5),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 6),
             },
             {
                 x: UNIT * 2,
-                y: GAME_SETTINGS.HEIGHT - (UNIT * 5),
+                y: GAME_SETTINGS.HEIGHT - (UNIT * 6),
             },
         ],
     powerUpPositions: [
@@ -276,7 +276,7 @@ const LEVELS = [
             },
             {
                 x: UNIT * 15.5,
-                y: GAME_SETTINGS.HEIGHT - UNIT * 14,
+                y: GAME_SETTINGS.HEIGHT - UNIT * 15,
             },
             {
                 x: UNIT * 5,
@@ -297,7 +297,7 @@ const LEVELS = [
             y: GAME_SETTINGS.HEIGHT - UNIT * 16,
         },
         {
-            x: UNIT * 20,
+            x: UNIT * 19,
             y: GAME_SETTINGS.HEIGHT - UNIT * 16,
         },
         {

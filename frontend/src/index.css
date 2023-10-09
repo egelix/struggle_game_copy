@@ -114,6 +114,7 @@ canvas {
 .level-preview-container {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .error-text {

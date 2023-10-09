@@ -42,7 +42,7 @@ class Game {
             game: this,
             playerCharacter: this.playerCharacter,
         });
-        this.player.loadImg();
+        this.player.loadAnimations();
          this.loadPlatforms();
         this.spawnPowerUp();
         this.loadScoreBlocks();
@@ -106,8 +106,6 @@ class Game {
                     x: position.x,
                     y: position.y,
                 },
-                width: GAME_SETTINGS.BLOCK_SIZE,
-                height: GAME_SETTINGS.BLOCK_SIZE,
                 c: this.c,
             })
         })

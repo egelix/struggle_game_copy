@@ -7,7 +7,7 @@ class CollisionBlock {
   }
 
   draw() {
-    this.c.fillStyle = 'rgb(0, 0, 255)';
+    this.c.fillStyle = 'white';
     this.c.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
 

@@ -2,8 +2,15 @@ import GAME_SETTINGS from "../constants/GameSettings";
 import CollisionBlock from "./CollisionBlock";
 
 class ScoreBlock extends CollisionBlock {
-    constructor({ position, height, width, c }) {
-        super({ position, height, width, c });
+    constructor({ position, c }) {
+
+        super({ c });
+        this.position = {
+            x: position.x - GAME_SETTINGS.BLOCK_SIZE / 2,
+            y: position.y - GAME_SETTINGS.BLOCK_SIZE / 2,
+        }
+        this.width = GAME_SETTINGS.BLOCK_SIZE * 2;
+        this.height = GAME_SETTINGS.BLOCK_SIZE * 2;
         this.score = 1;
         this.currentImage = new Image()
         this.hitBox = {
@@ -48,7 +55,6 @@ class ScoreBlock extends CollisionBlock {
     }
     initializeImage() {
         this.currentImage.src = "/src/game/assets/sprites/items/lightbulb/bulb_animation.png";
-
         this.frameRate = 15;
         this.frameBuffer = 4;
         this.currentFrame = 0;

@@ -5,16 +5,44 @@ class LevelChangeBlock extends CollisionBlock {
         super({ position, height, width, c });
     }
     draw() {
-        this.c.drawImage(this.currentImage, this.position.x, this.position.y, this.width, this.height);
-      }
+        if (!this.currentImage) {
+            return
+        } 
+
+    const cropbox = {
+      position: {
+        x: this.currentFrame * (this.currentImage.width / this.frameRate),
+        y: 0,
+      },
+      width: this.currentImage.width / this.frameRate,
+      height: this.currentImage.height,
+    }
+
+    this.c.drawImage(
+      this.currentImage,
+      cropbox.position.x,
+      cropbox.position.y,
+      cropbox.width,
+      cropbox.height,
+      this.position.x,
+      this.position.y,
+      this.width,
+      this.height
+    )
+    /* this.c.fillStyle = 'rgba(255, 0, 0, 0.5)';
+    this.c.fillRect(this.hitBox.position.x, this.hitBox.position.y, this.hitBox.width, this.hitBox.height); */
+    }
     activate(game) {
         game.pickRandomLevel();
         game.playerGUI.timeLimit -= 2;
     }
     initializeImage() {
-        const img = new Image()
-        img.src = "/src/game/assets/sprites/items/levelchangeblock/level_change1.png";
-        this.currentImage = img;
+        this.currentImage = new Image();
+        this.currentImage.src = "/src/game/assets/sprites/items/levelchangeblock/cc_logo_animation.png";
+        this.frameRate = 4;
+        this.frameBuffer = 10;
+        this.currentFrame = 0;
+        this.elapsedFrames = 0;
     }
 }
 export default LevelChangeBlock;
